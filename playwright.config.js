@@ -9,11 +9,11 @@ module.exports = defineConfig({
   testDir: "./playwright_test_folder",
   webServer: {
     command: "npm run start",
-    url: "http://localhost:5500",
+    url: "http://127.0.0.1:5500",
     reuseExistingServer: !process.env.CI,
   },
   use: {
-    baseURL: "http://localhost:5500",
+    baseURL: "http://127.0.0.1:5500",
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
   },
